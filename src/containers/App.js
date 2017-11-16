@@ -47,26 +47,26 @@ export default compose(
     }
   }),
   lifecycle({
-    componentWillMount: () => {
+    componentWillMount() {
       console.log('App componentWillMount');
     },
-    componentDidMount: () => {
+    componentDidMount() {
       console.log('App componentDidMount');
     },
-    componentWillReceiveProps: (nextProps) => {
+    componentWillReceiveProps(nextProps) {
       console.log(`App componentWillReceiveProps ${nextProps}`);
     },
     /*shouldComponentUpdate: (nextProps, nextState) => {
       console.log('App shouldComponentUpdate');
       return true or false;
     },*/
-    componentWillUpdate: () => {
+    componentWillUpdate() {
       console.log('App componentWillUpdate');
     },
-    componentDidUpdate: () => {
+    componentDidUpdate() {
       console.log('App componentDidUpdate');
     },
-    componentWillUnmount: () => {
+    componentWillUnmount() {
       console.log('App componentWillUnmount');
     }
   })

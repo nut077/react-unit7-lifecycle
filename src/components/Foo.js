@@ -11,26 +11,26 @@ export default compose(
     message: PropTypes.string.isRequired
   }),
   lifecycle({
-    componentWillMount: () => {
+    componentWillMount() {
       console.log('Foo componentWillMount');
     },
-    componentDidMount: () => {
+    componentDidMount() {
       console.log('Foo componentDidMount');
     },
-    componentWillReceiveProps: (nextProps) => {
+    componentWillReceiveProps(nextProps) {
       console.log(`Foo componentWillReceiveProps ${nextProps}`);
     },
     /*shouldComponentUpdate: (nextProps, nextState) => {
       console.log('Foo shouldComponentUpdate');
       return true or false;
     },*/
-    componentWillUpdate: () => {
+    componentWillUpdate() {
       console.log('Foo componentWillUpdate');
     },
-    componentDidUpdate: () => {
+    componentDidUpdate() {
       console.log('Foo componentDidUpdate');
     },
-    componentWillUnmount: () => {
+    componentWillUnmount() {
       console.log('Foo componentWillUnmount');
     }
   })

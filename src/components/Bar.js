@@ -11,26 +11,26 @@ export default compose(
     message: PropTypes.string.isRequired
   }),
   lifecycle({
-    componentWillMount: () => {
+    componentWillMount() {
       console.log('Bar componentWillMount');
     },
-    componentDidMount: () => {
+    componentDidMount() {
       console.log('Bar componentDidMount');
     },
-    componentWillReceiveProps: (nextProps) => {
+    componentWillReceiveProps(nextProps) {
       console.log(`Bar componentWillReceiveProps ${nextProps}`);
     },
     /*shouldComponentUpdate: (nextProps, nextState) => {
       console.log('Bar shouldComponentUpdate');
       return true or false;
     },*/
-    componentWillUpdate: () => {
+    componentWillUpdate() {
       console.log('Bar componentWillUpdate');
     },
-    componentDidUpdate: () => {
+    componentDidUpdate() {
       console.log('Bar componentDidUpdate');
     },
-    componentWillUnmount: () => {
+    componentWillUnmount() {
       console.log('Bar componentWillUnmount');
     }
   })
